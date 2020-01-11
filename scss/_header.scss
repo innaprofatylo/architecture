@@ -1,0 +1,58 @@
+
+.ba-header {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 35px 0;
+  background-size: cover;
+  z-index: 5;
+  position: absolute;
+}
+.ba-menu {
+	list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "GothamBook", sans-serif;
+  font-size: 14px;
+
+  li + li{
+	  margin-left: 30px;
+  }
+}
+.ba-main-nav {
+  display: flex;
+  padding-top: 8px;
+}
+.ba-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ba-menu li + li {
+  margin-left: 18px;
+}
+
+.ba-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  padding: 5px 10px;
+}
+.ba-socials{
+	svg{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	}
+	a{
+		text-decoration: none;
+	}
+}

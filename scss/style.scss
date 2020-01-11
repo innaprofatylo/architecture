@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap");
+
+
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "fonts";
+@import "header";
+@import "section-intro";
+@import "slick";
+
+
+$body-font-family: "Gotham", sans-serif;
+$text-font-family: "Open Sans", sans-serif;
+$text-color: #2c4058;
+$text-color-light: #515b67;
+
+$medium: 640px;
+$large: 1024px;
+
+body{
+font: 400 18px/1.6 $text-font-family;
+}
+p{
+	margin: 0 0 30px;
+}
+h1{
+	font-size: 80px;
+	font-family: "Gotham", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	text-align: center;
+	margin: 200px 0 10px;
+}
+h2{
+	font-size: 44px;
+	font-family: $body-font-family;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 160px;
+}
+h3{
+	font-size: 22px;
+	font-weight: 700;
+	font-family: $body-font-family;
+	text-transform: uppercase;
+	margin: 0;
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1210px;
+}
+.ba-subtitle{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-family: "GothamBook", sans-serif;
+	margin: 40px 0 0;
+}
+.ba-adress{
+	font-style: italic;
+
+}
+.ba-button{
+	padding: 11px 37px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "GothamBook", sans-serif;
+	background-color: #fff;
+	margin-bottom: 65px;
+
+	&:hover{
+		background-color: rgb(173, 170, 170);
+	}
+}
+.text-left{
+	text-align: left;
+	margin: 0 0 15px;
+}
+.ba-square{
+	position: absolute;
+	left: 0;
+	top: 1050px;
+	z-index: 0;
+
+	&--dark{
+		right: 0;
+		top: 1650px;
+		position: absolute;
+	}
+}
+.ba-picture{
+	position: relative;
+	z-index: 3;
+}
+.ba-foto{
+	display: flex;
+}
+.ba-card{
+
+	&__picture{
+		width: 100%;
+	}
+	background-color: #fff;
+
+	
+}
+.text-center--white{
+	color: #fff;
+}
+#map{
+	height: 400px;
+}

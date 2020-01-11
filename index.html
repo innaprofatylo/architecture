@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Architecture</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+	<section class="ba-section ba-section--big">
+		<header>
+			<div class="ba-container">
+			<div class="ba-header-bar">
+				<a href="#" class="ba-logo">
+					<svg width="242" height="55" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" viewBox="0 0.397 242 54.207"><svg xmlns="http://www.w3.org/2000/svg" width="242" height="55" viewBox="2 1.006 241 53.983" fill="#fff"><path fill="#FFF" paint-order="stroke fill markers" fill-rule="evenodd" d="M24.92 49.4l28.618-.252-20.555-35.19-16.792 29.93-4.52.04L30.976 10.36l-3.229-5.526L2 49.602l17.44-.153 13.64-24.313 10.81 18.508-16.65.147-2.32 5.61zm44.756 5.589L38.366 1.225l.371-.219 31.31 53.763-.37.22zm2.808-33.178v-.052c0-5.224 4.094-9.459 9.553-9.459 5.459 0 9.502 4.183 9.502 9.407v.052c0 5.223-4.095 9.46-9.553 9.46-5.459 0-9.502-4.185-9.502-9.408zm14.051 0v-.052c0-2.625-1.845-4.912-4.55-4.912-2.678 0-4.472 2.235-4.472 4.86v.052c0 2.625 1.845 4.912 4.524 4.912 2.704 0 4.498-2.235 4.498-4.86zm10.089-9.147h4.574l7.278 9.615v-9.615h4.852v18.19h-4.296l-7.556-9.979v9.98h-4.852V12.663zm26.691 4.417h-5.307v-4.417h15.517v4.417h-5.307v13.773h-4.903V17.081zm14.99-4.417h4.929v18.19h-4.929v-18.19zm10.086 9.147v-.052c0-5.301 3.968-9.459 9.325-9.459 3.614 0 5.939 1.559 7.506 3.794l-3.69 2.936c-1.01-1.299-2.173-2.13-3.866-2.13-2.476 0-4.22 2.156-4.22 4.807v.052c0 2.729 1.744 4.86 4.22 4.86 1.845 0 2.931-.884 3.993-2.21l3.69 2.703c-1.668 2.365-3.918 4.106-7.835 4.106-5.054 0-9.123-3.976-9.123-9.407zm21.586-9.147h14.229v4.287h-9.376v2.755h8.49v3.976h-8.49v2.884h9.502v4.288h-14.355v-18.19zm19.388 0h4.903v13.773h8.567v4.417h-13.47v-18.19zm18.099 0h4.902v13.773h8.568v4.417h-13.47v-18.19zm16.48 9.147v-.052c0-5.224 4.095-9.459 9.554-9.459 5.459 0 9.502 4.183 9.502 9.407v.052c0 5.223-4.095 9.46-9.553 9.46-5.459 0-9.502-4.185-9.502-9.408zm14.052 0v-.052c0-2.625-1.845-4.912-4.55-4.912-2.678 0-4.472 2.235-4.472 4.86v.052c0 2.625 1.844 4.912 4.524 4.912 2.704 0 4.498-2.235 4.498-4.86zM53.424 26.482V20.46l4.498 7.07h.101l4.524-7.122v10.447h4.877v-18.19h-5.18l-4.221 7.042-4.22-7.042h-5.18v5.574l4.8 8.244zm20.07 14.225h.678v6.06h-.678v-6.06zm5.875 0h.636l3.786 4.857v-4.857h.661v6.06h-.541l-3.88-4.97v4.97h-.662v-6.06zm11.811.631h-2.018v-.63h4.722v.63h-2.018v5.43h-.686v-5.43zm7.414-.63h4.345v.622h-3.666v2.07h3.279v.622h-3.28v2.121h3.71v.625h-4.388v-6.06zm9.19 0h2.586c.738 0 1.33.224 1.708.605.291.294.463.719.463 1.194v.017c0 1.005-.687 1.594-1.63 1.767l1.845 2.477h-.833l-1.742-2.356h-1.717v2.356h-.68v-6.06zm2.525 3.09c.902 0 1.545-.468 1.545-1.247v-.018c0-.745-.566-1.195-1.536-1.195h-1.854v2.46h1.845zm7.123-3.09h.636l3.786 4.856v-4.857h.66v6.06h-.54l-3.88-4.97v4.97h-.662v-6.06zm12.446-.045h.635l2.739 6.105h-.73l-.704-1.603h-3.27l-.714 1.603h-.695l2.739-6.105zm1.674 3.888l-1.365-3.091-1.374 3.091h2.74zm7.14-3.213h-2.018v-.63h4.722v.63h-2.018v5.43h-.686v-5.43zm7.475-.63h.677v6.06h-.677v-6.06zm5.61 3.046v-.017c0-1.671 1.244-3.135 3.073-3.135s3.056 1.447 3.056 3.118v.017c0 1.67-1.245 3.134-3.074 3.134-1.829 0-3.056-1.446-3.056-3.117zm5.425 0v-.017c0-1.377-.996-2.502-2.37-2.502-1.373 0-2.352 1.108-2.352 2.485v.017c0 1.376.996 2.502 2.37 2.502 1.373 0 2.352-1.108 2.352-2.485zm5.577-3.047h.636l3.786 4.857v-4.857h.66v6.06h-.54l-3.881-4.97v4.97h-.661v-6.06zm12.446-.044h.636l2.738 6.105h-.73l-.703-1.603h-3.27l-.714 1.603h-.695l2.738-6.105zm1.675 3.888l-1.366-3.091-1.373 3.091h2.739zm6.324-3.844h.679v5.428h3.382v.633h-4.06v-6.06zm14.5 3.047v-.017c0-1.663 1.211-3.135 3.014-3.135 1.013 0 1.64.294 2.24.806l-.437.519c-.464-.406-.979-.692-1.828-.692-1.332 0-2.285 1.134-2.285 2.485v.017c0 1.445.919 2.52 2.379 2.52.687 0 1.322-.27 1.734-.606v-1.508h-1.828v-.614h2.48v2.416c-.558.502-1.4.926-2.413.926-1.888 0-3.055-1.385-3.055-3.117zm10.437-3.047h2.585c.738 0 1.33.225 1.708.606.292.294.464.719.464 1.194v.017c0 1.005-.687 1.594-1.631 1.767l1.845 2.477h-.833l-1.742-2.356h-1.717v2.356h-.679v-6.06zm2.524 3.09c.902 0 1.546-.467 1.546-1.246v-.018c0-.745-.567-1.195-1.537-1.195h-1.854v2.46h1.845zm6.857-.043v-.017c0-1.671 1.244-3.135 3.073-3.135s3.056 1.447 3.056 3.118v.017c0 1.67-1.245 3.134-3.073 3.134-1.83 0-3.056-1.446-3.056-3.117zm5.425 0v-.017c0-1.377-.995-2.502-2.37-2.502-1.373 0-2.352 1.108-2.352 2.485v.017c0 1.376.996 2.502 2.37 2.502 1.373 0 2.352-1.108 2.352-2.485zm5.484.476v-3.523h.678v3.48c0 1.307.687 2.043 1.837 2.043 1.108 0 1.812-.676 1.812-2v-3.523h.678v3.472c0 1.766-1.004 2.683-2.507 2.683-1.485 0-2.498-.917-2.498-2.632zm10.05-3.523h2.25c1.356 0 2.249.727 2.249 1.922v.017c0 1.308-1.082 1.983-2.36 1.983h-1.46v2.139h-.679v-6.06zm2.164 3.298c.995 0 1.648-.537 1.648-1.334v-.016c0-.867-.644-1.317-1.614-1.317h-1.52v2.667h1.486z"/></svg></svg>
+				</a>
+				<nav class="ba-main-nav">
+					<ul class="ba-menu">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#projects">projects</a></li>
+						<li><a href="#news">news</a></li>
+						<li><a href="#contact">contact</a></li>
+						
+					</ul>
+				</nav>
+				<div class="ba-socials">
+          
+					<a href="#">
+					  <svg width="32" height="15">
+						 <use xlink:href="#icon-facebook" />
+					  </svg>
+					</a>
+					<a href="#">
+					  <svg width="32" height="15">
+						 <use xlink:href="#icon-twitter" />
+					  </svg>
+					</a>
+					<a href="#">
+					  <svg width="32" height="15">
+						 <use xlink:href="#icon-instagram" />
+					  </svg>
+					</a>
+				 </div>
+			</div>
+			<!-- /.ba-header-bar -->
+			
+		</div>
+		<!-- /.ba-container -->
+	</header>
+
+	<main>
+		<section class="ba-slider">
+
+		<section class="ba-section-intro" style="background-image: url(img/bg.png);">
+			
+			<div class="ba-container">
+				<div class="ba-main-page">
+					<h1>Simple & mordern</h1>
+					<p class="ba-main-page ba-main-page__text">We make the world's beautiful every day</p>
+				</div>
+				<!-- /.ba-main-page -->
+				
+				<a class="ba-scroll" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px">\
+					<path fill="white"
+					  d="M0.676,0.124 C0.599,0.041 0.502,-0.000 0.396,-0.000 C0.290,-0.000 0.193,0.041 0.116,0.124 C-0.038,0.289 -0.038,0.558 0.116,0.724 L5.036,6.000 L0.116,11.276 C-0.038,11.441 -0.038,11.710 0.116,11.876 C0.271,12.041 0.521,12.041 0.676,11.876 L5.884,6.300 C6.039,6.134 6.039,5.865 5.884,5.700 L0.676,0.124 Z"/>
+					</svg>
+				</a>
+			</div>
+			<!--ba-container-->
+		</section>
+
+		<section class="ba-section-intro" style="background-image: url(img/bg1.jpg);">
+			<div class="ba-container">
+				<div class="ba-main-page">
+					<h1>Simple & mordern</h1>
+					<p class="ba-main-page ba-main-page__text">We make the world's beautiful every day</p>
+				</div>
+				<!-- /.ba-main-page -->
+				
+				<a class="ba-scroll" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px">\
+					<path fill="white"
+					  d="M0.676,0.124 C0.599,0.041 0.502,-0.000 0.396,-0.000 C0.290,-0.000 0.193,0.041 0.116,0.124 C-0.038,0.289 -0.038,0.558 0.116,0.724 L5.036,6.000 L0.116,11.276 C-0.038,11.441 -0.038,11.710 0.116,11.876 C0.271,12.041 0.521,12.041 0.676,11.876 L5.884,6.300 C6.039,6.134 6.039,5.865 5.884,5.700 L0.676,0.124 Z"/>
+					</svg>
+				</a>
+			</div>
+			<!--ba-container-->
+		</section>
+
+		<section class="ba-section-intro" style="background-image: url(img/bg3.jpg);">
+			<div class="ba-container">
+				<div class="ba-main-page">
+					<h1>Simple & mordern</h1>
+					<p class="ba-main-page ba-main-page__text">We make the world's beautiful every day</p>
+				</div>
+				<!-- /.ba-main-page -->
+				
+				<a class="ba-scroll" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px">\
+					<path fill="white"
+					  d="M0.676,0.124 C0.599,0.041 0.502,-0.000 0.396,-0.000 C0.290,-0.000 0.193,0.041 0.116,0.124 C-0.038,0.289 -0.038,0.558 0.116,0.724 L5.036,6.000 L0.116,11.276 C-0.038,11.441 -0.038,11.710 0.116,11.876 C0.271,12.041 0.521,12.041 0.676,11.876 L5.884,6.300 C6.039,6.134 6.039,5.865 5.884,5.700 L0.676,0.124 Z"/>
+					</svg>
+				</a>
+			</div>
+			<!--ba-container-->
+		</section>
+
+		<section class="ba-section-intro" style="background-image: url(img/bg1.jpg);">
+			<div class="ba-container">
+				<div class="ba-main-page">
+					<h1>Simple & mordern</h1>
+					<p class="ba-main-page ba-main-page__text">We make the world's beautiful every day</p>
+				</div>
+				<!-- /.ba-main-page -->
+				
+				<a class="ba-scroll" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px">\
+					<path fill="white"
+					  d="M0.676,0.124 C0.599,0.041 0.502,-0.000 0.396,-0.000 C0.290,-0.000 0.193,0.041 0.116,0.124 C-0.038,0.289 -0.038,0.558 0.116,0.724 L5.036,6.000 L0.116,11.276 C-0.038,11.441 -0.038,11.710 0.116,11.876 C0.271,12.041 0.521,12.041 0.676,11.876 L5.884,6.300 C6.039,6.134 6.039,5.865 5.884,5.700 L0.676,0.124 Z"/>
+					</svg>
+				</a>
+			</div>
+			<!--ba-container-->
+		</section>
+
+		<section class="ba-section-intro" style="background-image: url(img/bg3.jpg);">
+			<div class="ba-container">
+				<div class="ba-main-page">
+					<h1>Simple & mordern</h1>
+					<p class="ba-main-page ba-main-page__text">We make the world's beautiful every day</p>
+				</div>
+				<!-- /.ba-main-page -->
+				
+				<a class="ba-scroll" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="6px" height="12px">\
+					<path fill="white"
+					  d="M0.676,0.124 C0.599,0.041 0.502,-0.000 0.396,-0.000 C0.290,-0.000 0.193,0.041 0.116,0.124 C-0.038,0.289 -0.038,0.558 0.116,0.724 L5.036,6.000 L0.116,11.276 C-0.038,11.441 -0.038,11.710 0.116,11.876 C0.271,12.041 0.521,12.041 0.676,11.876 L5.884,6.300 C6.039,6.134 6.039,5.865 5.884,5.700 L0.676,0.124 Z"/>
+					</svg>
+				</a>
+			</div>
+			<!--ba-container-->
+		</section>
+
+	</section>
+	</section>
+
+	<section class="ba-section ba-section--doing">
+		<div class="ba-container">
+		<h2 class="text-center">what we do</h2>
+
+		<div class="ba-row">
+			<div class="ba-col-small-12 ba-col-large-6">
+				<img class="ba-square" src="./img/Back.png" alt="back">
+				<img class="ba-picture" src="./img/picture.png" alt="picture">
+			</div>
+			<!-- /.ba-col-small-12 ba-col-large-6 -->
+
+			<div class="ba-col-small-12 ba-col-large-6 ba-block">
+			<p class="ba-subtitle">One World</p>
+				<h2 class="text-left">Trade Center</h2>
+				<p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+			<button class="ba-button">more details</button>
+			<p class="ba-adress">New York City, United States - 1776 feet</p>
+			</div>
+			<!-- /.ba-col-small-12 ba-col-large-6 -->
+
+		</div>
+		<!-- /.ba-row -->
+	</div>
+	<!-- /.ba-container -->
+	</section>
+	<!-- /.ba-section--doing -->
+
+	<section class="ba-section ba-section--build">
+		<div class="ba-container">
+		
+		<div class="ba-row">
+			
+			<div class="ba-col-small-12 ba-col-large-6 ba-block">
+			<p class="ba-subtitle">International</p>
+				<h2 class="text-left">Commerce Centre</h2>
+				<p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+			<button class="ba-button">more details</button>
+			<p class="ba-adress">Hong Kong - 1588 Feet</p>
+			</div>
+			<!-- /.ba-col-small-12 ba-col-large-6 -->
+
+			<div class="ba-col-small-12 ba-col-large-6">
+				<img class="ba-square--dark" src="./img/Backs.png" alt="back">
+				<img class="ba-picture" src="./img/build.png" alt="picture">
+			</div>
+			<!-- /.ba-col-small-12 ba-col-large-6 -->
+
+		</div>
+		<!-- /.ba-row -->
+	</div>
+	<!-- /.ba-container -->
+	</section>
+	<!-- /.ba-section--build -->
+
+	<section class="ba-section ba-section--news">
+<div class="ba-container">
+
+	<h2 class="text-center text-center--white">latest news</h2>
+
+<div class="ba-hot-slider">
+
+	<div class="ba-card ba-col-large-4">
+		<img class="ba-card__picture" src="./img/lauren.png" alt="lauren">
+		<h3>See The Unmatched Beauty Of The Great. Lakes.</h3>
+		<p>Free directories: directories are perfect for customers that are... searching for</p>
+	<div class="ba-foto">
+		<img src="./img/photos.png" alt="photos">
+		<p class="ba-name">Isaac Dunn</p>
+		<p class="ba-date">09 Feb 2017</p>
+	</div>
+	<!-- /.ba-foto -->
+	</div>
+	<!-- /.ba-card -->
+
+	<div class="ba-card ba-col-large-4">
+		<img class="ba-card__picture" src="./img/lauren.png" alt="lauren">
+		<h3>See The Unmatched Beauty Of The Great. Lakes.</h3>
+		<p>Free directories: directories are perfect for customers that are... searching for</p>
+	<div class="ba-foto">
+		<img src="./img/photos.png" alt="photos">
+		<p class="ba-name">Isaac Dunn</p>
+		<p class="ba-date">09 Feb 2017</p>
+	</div>
+	<!-- /.ba-foto -->
+	</div>
+	<!-- /.ba-card -->
+
+	<div class="ba-card ba-col-large-4">
+		<img class="ba-card__picture" src="./img/lauren.png" alt="lauren">
+		<h3>See The Unmatched Beauty Of The Great. Lakes.</h3>
+		<p>Free directories: directories are perfect for customers that are... searching for</p>
+	<div class="ba-foto">
+		<img src="./img/photos.png" alt="photos">
+		<p class="ba-name">Isaac Dunn</p>
+		<p class="ba-date">09 Feb 2017</p>
+	</div>
+	<!-- /.ba-foto -->
+	</div>
+	<!-- /.ba-card -->
+
+	<div class="ba-card ba-col-large-4">
+		<img class="ba-card__picture" src="./img/lauren.png" alt="lauren">
+		<h3>See The Unmatched Beauty Of The Great. Lakes.</h3>
+		<p>Free directories: directories are perfect for customers that are... searching for</p>
+	<div class="ba-foto">
+		<img src="./img/photos.png" alt="photos">
+		<p class="ba-name">Isaac Dunn</p>
+		<p class="ba-date">09 Feb 2017</p>
+	</div>
+	<!-- /.ba-foto -->
+	</div>
+	<!-- /.ba-card -->
+
+	<div class="ba-card ba-col-large-4">
+		<img class="ba-card__picture" src="./img/lauren.png" alt="lauren">
+		<h3>See The Unmatched Beauty Of The Great. Lakes.</h3>
+		<p>Free directories: directories are perfect for customers that are... searching for</p>
+	<div class="ba-foto">
+		<img src="./img/photos.png" alt="photos">
+		<p class="ba-name">Isaac Dunn</p>
+		<p class="ba-date">09 Feb 2017</p>
+	</div>
+	<!-- /.ba-foto -->
+	</div>
+	<!-- /.ba-card -->
+
+</div>
+<!-- /.ba-hot-slider -->
+</div>
+<!-- /.ba-container -->
+	</section>
+	<!-- /.ba-news -->
+	
+	<div id="map"></div>
+
+
+</main>
+
+
+		<svg style="position: absolute; width: 0; height: 0;">
+			<defs>
+			  <symbol id="icon-twitter" viewBox="0 0 32 32">
+				 <title>twitter</title>
+				 <path
+				 fill="#fff" d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+				 </path>
+			  </symbol>
+			  <symbol id="icon-instagram" viewBox="0 0 32 32">
+				 <title>instagram</title>
+				 <path fill="#fff"
+					d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z">
+				 </path>
+				 <path fill="#fff"
+					d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z">
+				 </path>
+				 <path fill="#fff"
+					d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z">
+				 </path>
+			  </symbol>
+			  <symbol id="icon-facebook" viewBox="0 0 32 32">
+				 <title>facebook</title>
+				 <path fill="#fff" d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
+				 </path>
+			  </symbol>
+			</defs>
+		 </svg>
+
+	
+	
+		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_BvGQbN1ahxfHjgxzrwMh6zzJs_NQzHU">
+		 </script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
